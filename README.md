@@ -1,189 +1,96 @@
-# Data Science & Machine Learning Portfolio
+# 🧠 Data Science & Machine Learning Portfolio
 
-> A structured collection of Machine Learning, Data Science, and ML Engineering projects  
-> built using real-world datasets, production-ready pipelines, and deployment frameworks.
-
----
-
-## 📚 Repository Structure
-
-This portfolio is organized into:
-
-- 🧠 Core ML Concepts  
-- 🤖 Supervised Learning  
-- 📊 Unsupervised Learning
-- 🚀 Deployment Projects  
+A curated collection of end-to-end data science projects covering supervised learning, unsupervised learning, and deployment-ready ML applications.
 
 ---
 
-# 🧠 Core Machine Learning Concepts
+## 📁 Project Structure
 
-- Supervised vs Unsupervised Learning
-- Overfitting vs Underfitting
-- Bias–Variance Tradeoff
-- Model Evaluation Metrics
-- Cross Validation (K-Fold)
-- Hyperparameter Tuning
-- Feature Engineering & Selection
-
----
-
-# 🤖 Supervised Learning
-
----
-
-## 📈 Regression Projects
-
-### 🔹 Linear Regression
-- Theory + Implementation
-- R², MAE, MSE, RMSE
-- Deployment Ready
-
-🔗 **Project:**  
-[[CoffeeShop_Prediction](https://github.com/Beni-18/CoffeeShop_Prediction)](#)
+```
+Data-Scientist/
+├── Random_Forest_Classifier/     # 🍷 Wine Quality Prediction App
+│   ├── app.py                    # Streamlit app (Enhanced UI)
+│   ├── random_forest_wine.pkl    # Trained model
+│   ├── requirements.txt
+│   └── wine_quality_prediction.ipynb
+│
+├── svm_digits_app/               # ✍️ Handwritten Digit Recognition App
+│   ├── app.py                    # Streamlit app (Enhanced UI)
+│   ├── requirements.txt
+│   └── digits_svm_project.ipynb
+│
+└── Demo.py.txt                   # General ML demo script
+```
 
 ---
 
-### 🔹 Lasso & Ridge Regression
-- L1 & L2 Regularization
-- Overfitting Control
-- Feature Shrinkage
+## 🚀 Applications
 
-🔗 **Project:**  
-[[Lasso_Linear](https://github.com/Beni-18/Lasso_Linear)](#)
+### 🍷 Wine Quality Predictor (`Random_Forest_Classifier/`)
+- **Algorithm:** Random Forest Classifier
+- **Task:** Binary classification — High Quality vs Low Quality wine
+- **Input features:** Alcohol, Sulphates, Volatile Acidity, pH
+- **Frontend:** Premium dark theme with glassmorphism, animated results, confidence bars
+- **Deploy:**
+  ```bash
+  cd Random_Forest_Classifier
+  pip install -r requirements.txt
+  streamlit run app.py
+  ```
 
----
-
-### 🔹 House Price Prediction
-- Data Cleaning
-- Feature Engineering
-- Model Comparison
-- Deployment
-
-🔗 **Project:**  
-[[House_Price_Prediction](https://github.com/Beni-18/House_Price_Prediction)](#)
-
----
-
-## 🏥 Classification Projects
-
-### 🔹 Logistic Regression
-- Binary Classification
-- Confusion Matrix
-- Precision, Recall, F1 Score
-
-🔗 **Project:**  
-[[Framingham_Heart_Disease_Predictor](https://github.com/Beni-18/Framingham_Heart_Disease-Predictor-)](#)
+### ✍️ Handwritten Digit Recognizer (`svm_digits_app/`)
+- **Algorithm:** Support Vector Machine (Linear / RBF kernel)
+- **Task:** Multi-class classification — Digits 0–9
+- **Dataset:** scikit-learn built-in Digits dataset (8×8 pixel images)
+- **Frontend:** Premium dark blue theme, probability chart, real-time prediction
+- **Deploy:**
+  ```bash
+  cd svm_digits_app
+  pip install -r requirements.txt
+  streamlit run app.py
+  ```
 
 ---
 
-### 🔹 Support Vector Machine (SVM)
-- Hyperplane & Margin Concept
-- Kernel Trick
-- Digit Classification
+## 🤖 Supervised Learning Topics Covered
 
-🔗 **Project:**  
-[[SVM_Digit_Predictor](https://github.com/Beni-18/SVM_Digit_Predictor)](#)
+| Category | Methods |
+|---|---|
+| **Regression** | Linear Regression, Lasso, Ridge, House Price Prediction |
+| **Classification** | Logistic Regression, SVM, Random Forest, Naive Bayes, Decision Tree |
+| **Ensemble** | Random Forest, Gradient Boosting |
 
----
+## 📊 Unsupervised Learning
 
-### 🔹 Ensemble Learning (Random Forest / Gradient Boosting)
-- Feature Importance
-- Model Comparison
-- Advanced Evaluation
+- K-Means Clustering
+- DBSCAN (Density-Based Clustering)
 
-🔗 **Projects:**  
-[[Diabetes-Predictor](https://github.com/Beni-18/Diabetes-Predictor)](#)  
-[[diabetes-gradient-boosting-streamlit](https://github.com/Beni-18/diabetes-gradient-boosting-streamlit)](#)
-
----
-
-### 🔹 Naive Bayes
-- Probabilistic Classification
-- Spam Detection
-
-🔗 **Project:**  
-[[Spam_Mail_Detector](https://github.com/Beni-18/Spam_Maill_Detector)](#)
-
----
-
-### 🔹 Decision Tree / Tree-Based Models
-- Gini vs Entropy
-- Model Interpretation
-
-🔗 **Project:**  
-[[Mushroom_Classifier](https://github.com/Beni-18/Mushroom_Classifier)](#)
-
----
-
-# 📊 Unsupervised Learning
-
----
-
-## 🔹 K-Means Clustering
-- Elbow Method
-- Optimal Cluster Selection
-- Customer Segmentation
-
-🔗 **Project:**  
-[[Mall_Customer_Segmentation](https://github.com/Beni-18/Mall_Customer_Segmentation)](#)
-
----
-
-## 🔹 DBSCAN (Density-Based Clustering)
-- Core Points & Noise
-- Non-linear Cluster Detection
-
-🔗 **Project:**  
-[[DBSCAN_Wine](https://github.com/Beni-18/DBSCAN_Wine)](#)
-
----
-
-# 🛠 ML Engineering & Optimization
+## 🛠 ML Engineering
 
 - Bias–Variance Tradeoff
 - K-Fold Cross Validation
-- GridSearchCV
-- RandomizedSearchCV
+- GridSearchCV / RandomizedSearchCV
 - Feature Selection (Filter, Wrapper, Embedded)
 - Model Serialization (Joblib)
 - Streamlit Deployment
-- Flask Deployment
 
 ---
 
-# 🧪 Tech Stack
+## 🧪 Tech Stack
 
-Python
-NumPy
-Pandas
-Matplotlib
-Seaborn
-Scikit-Learn
-Streamlit
-Flask
-Joblib
+`Python` &nbsp; `NumPy` &nbsp; `Pandas` &nbsp; `Matplotlib` &nbsp; `Seaborn` &nbsp; `Scikit-Learn` &nbsp; `Streamlit` &nbsp; `Joblib`
 
 ---
 
-# 🌟 Highlights
+## 📌 Upcoming Additions
 
-✔ Clean Project Structure  
-✔ End-to-End ML Pipelines  
-✔ Model Evaluation Included  
-✔ Deployment-Ready Applications  
-✔ Real-World Dataset Usage  
-✔ Production-Oriented Code  
-
----
-
-# 📌 Upcoming Additions
-
-- XGBoost Advanced Tuning
-- Deep Learning Projects
-- NLP Applications
-- Model Monitoring
-- Docker Deployment
-- CI/CD for ML Apps
+- [ ] XGBoost Advanced Tuning
+- [ ] Deep Learning Projects
+- [ ] NLP Applications
+- [ ] Model Monitoring
+- [ ] Docker Deployment
+- [ ] CI/CD for ML Apps
 
 ---
+
+*Built with ❤️ as part of a Data Science specialization journey.*
