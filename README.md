@@ -11,8 +11,7 @@ This portfolio is organized into:
 
 - 🧠 Core ML Concepts  
 - 🤖 Supervised Learning  
-- 📊 Unsupervised Learning  
-- 🛠 ML Engineering & Optimization  
+- 📊 Unsupervised Learning
 - 🚀 Deployment Projects  
 
 ---
