@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
+import os
 import plotly.graph_objects as go
 from sklearn.datasets import load_breast_cancer
 from sklearn.metrics import accuracy_score
@@ -109,13 +110,14 @@ st.markdown("""
 # -----------------------------
 @st.cache_resource
 def load_assets():
+    base_path = os.path.dirname(__file__)
     data = load_breast_cancer()
-    scaler = joblib.load("scaler.pkl")
-    baseline_model = joblib.load("baseline_model.pkl")
-    filter_model = joblib.load("filter_model.pkl")
-    wrapper_model = joblib.load("wrapper_model.pkl")
-    filter_selector = joblib.load("filter_selector.pkl")
-    wrapper_selector = joblib.load("wrapper_selector.pkl")
+    scaler = joblib.load(os.path.join(base_path, "scaler.pkl"))
+    baseline_model = joblib.load(os.path.join(base_path, "baseline_model.pkl"))
+    filter_model = joblib.load(os.path.join(base_path, "filter_model.pkl"))
+    wrapper_model = joblib.load(os.path.join(base_path, "wrapper_model.pkl"))
+    filter_selector = joblib.load(os.path.join(base_path, "filter_selector.pkl"))
+    wrapper_selector = joblib.load(os.path.join(base_path, "wrapper_selector.pkl"))
     return {
         "data": data,
         "scaler": scaler,
